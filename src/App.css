@@ -27,11 +27,21 @@ h2 {
 
 .planets {
   display: flex;
+  justify-content: space-around;
   margin: 0 20px 100px;
 }
 
 .planet-card {
-  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.planet-card > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .planet-card img {
@@ -40,6 +50,38 @@ h2 {
 
 .planet-card h3 {
   font-weight: 300;
+}
+
+.mercurio {
+  width: 6.2%;
+}
+
+.venus {
+  width: 8%;
+}
+
+.terra {
+  width: 8.2%;
+}
+
+.marte {
+  width: 6.7%;
+}
+
+.jupiter {
+  width: 25.7%;
+}
+
+.saturno {
+  width: 20.1%;
+}
+
+.urano {
+  width: 12.8%;
+}
+
+.netuno {
+  width: 12.4%;
 }
 
 .missions {
@@ -51,7 +93,7 @@ h2 {
 .mission-card {
   border: 1px solid white;
   border-radius: 20px;
-  margin: 20px 50px;
+  margin: 20px 30px;
   padding: 20px;
   width: 25%;
 }
