@@ -14,7 +14,8 @@ class App extends React.Component {
         <SolarSystem />
         <Missions />
         <Footer />
-      </>);
+      </>
+    );
   }
 }
 

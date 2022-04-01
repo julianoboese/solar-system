@@ -5,7 +5,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="footer">
-        <img src={ LogoTrybe } alt="Logo da Trybe" />
+        <img src={LogoTrybe} alt="Logo da Trybe" />
       </footer>
     );
   }

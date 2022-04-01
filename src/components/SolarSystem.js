@@ -13,9 +13,9 @@ class SolarSystem extends React.Component {
             const { name, image } = planet;
             return (
               <PlanetCard
-                key={ name }
-                planetName={ name }
-                planetImage={ image }
+                key={name}
+                planetName={name}
+                planetImage={image}
               />
             );
           })}

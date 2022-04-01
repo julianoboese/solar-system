@@ -2,7 +2,6 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import PlanetCard from '../components/PlanetCard';
 
-
 describe('5 - Crie um componente chamado `PlanetCard`', () => {
   it('Será validado se o componente `<PlanetCard />` é renderizado', () => {
     render(<PlanetCard planetName="Terra" planetImage="path-to-image" />);
@@ -10,16 +9,14 @@ describe('5 - Crie um componente chamado `PlanetCard`', () => {
 
   it('Será validado se o componente `<PlanetCard />` possui uma div com o atributo `data-testid="planet-card"`', () => {
     render(<PlanetCard planetName="Terra" planetImage="path-to-image" />);
-    const planetCard = screen.getByTestId("planet-card");
-    
+    const planetCard = screen.getByTestId('planet-card');
+
     expect(planetCard).toBeInTheDocument();
   });
 
-  
-
   it('Será validado se é renderizado o texto recebido pela prop `planetName`', () => {
     render(<PlanetCard planetName="Terra" planetImage="path-to-image" />);
-    const planetText = screen.getByText("Terra");
+    const planetText = screen.getByText('Terra');
     expect(planetText).toBeInTheDocument();
   });
 

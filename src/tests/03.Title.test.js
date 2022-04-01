@@ -1,8 +1,8 @@
 import React from 'react';
-import { render, screen} from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Title from '../components/Title';
 
-const headlineText = "planets";
+const headlineText = 'planets';
 
 describe('3 - Crie um componente chamado `Title`', () => {
   it('Será validado se o componente `<Title />` é renderizado', () => {
@@ -12,7 +12,7 @@ describe('3 - Crie um componente chamado `Title`', () => {
   it('Será validado se o componente `<Title />` contém uma tag `h2`', () => {
     render(<Title headline={headlineText} />);
     const headline = screen.getByRole('heading', { level: 2 });
-    
+
     expect(headline).toBeInTheDocument();
   });
 
@@ -23,4 +23,3 @@ describe('3 - Crie um componente chamado `Title`', () => {
     expect(headline).toHaveTextContent(/planets/i);
   });
 });
-
